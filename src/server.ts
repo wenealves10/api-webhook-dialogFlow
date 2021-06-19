@@ -15,8 +15,8 @@ app.post("/dialogflow", (request, response) => {
 					{
 						text: {
 							text: [
-								"Qual tipo site você quer criar?",
-								"Landing page, Blog ou Loja virtual?",
+								"Qual tipo Site você quer criar?",
+								"Landing page, Blog, Loja virtual ou Site institucional ou outros?",
 							],
 						},
 					},
@@ -32,7 +32,7 @@ app.post("/dialogflow", (request, response) => {
 						text: {
 							text: [
 								"Qual tipo Sistema você quer criar?",
-								"Controle de estoque ou Api de pagamento?",
+								"Sistema de gestão, Sistema de cadastra, Sistema de financeiro ou outros?",
 							],
 						},
 					},
@@ -48,7 +48,7 @@ app.post("/dialogflow", (request, response) => {
 						text: {
 							text: [
 								"Qual tipo Aplicativo você quer criar?",
-								"Aplicativos de loja virtual ou Web Aplicativos?",
+								"Aplicativo de saúde, Aplicativo de vendas online, Aplicativo de controle de gastos ou outros?",
 							],
 						},
 					},

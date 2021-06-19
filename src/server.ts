@@ -12,10 +12,15 @@ app.post("/dialogflow", (request, response) => {
 		response.json({
 			fulfillmentMessages: [
 				{
-					text: {
-						text: [
-							"Opa valeu pode conta comigo pode me chama no Whatsapp para nós troca uma ideia! meu número é (99)9 8852-5464",
-							"https://wenedev.site",
+					card: {
+						title: "card title",
+						subtitle: "card text",
+						imageUri: "https://example.com/images/example.png",
+						buttons: [
+							{
+								text: "button text",
+								postback: "https://example.com/path/for/end-user/to/follow",
+							},
 						],
 					},
 				},

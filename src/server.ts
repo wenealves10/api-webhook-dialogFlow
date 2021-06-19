@@ -13,13 +13,13 @@ app.post("/dialogflow", (request, response) => {
 			fulfillmentMessages: [
 				{
 					card: {
-						title: "card title",
-						subtitle: "card text",
-						imageUri: "https://example.com/images/example.png",
+						title: "Meu Portfólio",
+						subtitle: "Crio vários sites e sistemas web",
+						imageUri: "https://i.imgur.com/rKyEO9A.png",
 						buttons: [
 							{
-								text: "button text",
-								postback: "https://example.com/path/for/end-user/to/follow",
+								text: "Quero ver o site",
+								postback: "https://www.wenedev.site",
 							},
 						],
 					},

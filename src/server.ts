@@ -9,7 +9,7 @@ app.use(express.json());
 app.post("/dialogflow", (request, response) => {
 	const { queryResult } = request.body as IRequestDialog;
 	if (queryResult.intent.displayName === "Servico - yes") {
-		response.json({ fulfillmentText: "Meu (99) 98852-5464" });
+		response.json({ fulfillmentText: ['Test', 'test'] });
 	}
 });
 

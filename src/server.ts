@@ -8,9 +8,7 @@ app.use(express.json());
 
 app.post("/dialogflow", (request, response) => {
 	const help = new Help();
-
 	help.helpService(request, response);
-	help.productHelp(request, response);
 });
 
 app.listen(process.env.PORT || 3000);

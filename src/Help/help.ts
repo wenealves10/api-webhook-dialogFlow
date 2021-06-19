@@ -57,20 +57,20 @@ class Help {
 	async productHelp(request: Request, response: Response) {
 		const { queryResult } = request.body as IRequestDialog;
 		if (queryResult.intent.displayName !== "Produto") return;
-		if (queryResult.parameters.produto === "Landing page") {
-			response.json({
-				fulfillmentMessages: [
-					{
-						text: {
-							text: [
-								"Legal amigo que você quer desenvolver uma Landing Page",
-								"Vamos conversa mais pelo whatsapp? meu número é (99) 98852-5464 ok?\nPode me chama lá para troca umas ideias! \n Pode ser?",
-							],
-						},
+		// if (queryResult.parameters.produto === "Landing page") {
+		response.json({
+			fulfillmentMessages: [
+				{
+					text: {
+						text: [
+							"Legal amigo que você quer desenvolver uma Landing Page",
+							"Vamos conversa mais pelo whatsapp? meu número é (99) 98852-5464 ok?\nPode me chama lá para troca umas ideias! \n Pode ser?",
+						],
 					},
-				],
-			});
-		}
+				},
+			],
+		});
+		// }
 	}
 }
 

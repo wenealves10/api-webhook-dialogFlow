@@ -13,6 +13,4 @@ app.post("/dialogflow", (request, response) => {
 	}
 });
 
-const listener = app.listen(process.env.PORT || 3000, () => {
-	console.log("Server running in the port", listener.address());
-});
+app.listen(process.env.PORT || 3000);

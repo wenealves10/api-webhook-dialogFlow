@@ -4,7 +4,7 @@ interface IRequestDialog {
 	queryResult: {
 		queryText: string;
 		parameters: {
-			"param-name": string;
+			servico?: string;
 		};
 		allRequiredParamsPresent: boolean;
 		fulfillmentText: string;

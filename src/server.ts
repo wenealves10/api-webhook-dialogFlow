@@ -10,7 +10,16 @@ app.post("/dialogflow", (request, response) => {
 	const { queryResult } = request.body as IRequestDialog;
 	if (queryResult.intent.displayName === "Servico - yes") {
 		response.json({
-			fulfillmentText: "<span> Pode me chama no meu Whatsapp</span>",
+			fulfillmentMessages: [
+				{
+					text: {
+						text: [
+							"Opa valeu pode conta comigo pode me chama no Whatsapp para nós troca uma ideia\nMeu número é (99)9 8852-5464",
+							"Meu linkeDin é esse: kkkk",
+						],
+					},
+				},
+			],
 		});
 	}
 });

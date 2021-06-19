@@ -14,8 +14,8 @@ app.post("/dialogflow", (request, response) => {
 				{
 					text: {
 						text: [
-							"Opa valeu pode conta comigo pode me chama no Whatsapp para nós troca uma ideia\nMeu número é (99)9 8852-5464",
-							"Meu linkeDin é esse: kkkk",
+							"Opa valeu pode conta comigo pode me chama no Whatsapp para nós troca uma ideia! meu número é (99)9 8852-5464",
+							"https://wenedev.site",
 						],
 					},
 				},

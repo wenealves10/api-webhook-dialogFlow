@@ -4,7 +4,7 @@ import { IRequestDialog } from "../DialogFlowDto/resquest";
 class Help {
 	async helpService(request: Request, response: Response) {
 		const { queryResult } = request.body as IRequestDialog;
-		console.log(request.body());
+
 		if (queryResult.intent.displayName === "Ajuda") {
 			if (queryResult.parameters.servico === "Site") {
 				response.json({

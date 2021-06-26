@@ -5,7 +5,9 @@ interface IRequestDialog {
 		queryText: string;
 		parameters: {
 			servico?: string;
-			produto?: string;
+			name?: string;
+			email?: string;
+			message?: string;
 		};
 		allRequiredParamsPresent: boolean;
 		fulfillmentText: string;

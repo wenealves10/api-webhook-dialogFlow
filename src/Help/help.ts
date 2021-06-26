@@ -11,23 +11,22 @@ class Help {
 		} = request.body as IRequestDialog;
 
 		const dialogflowResponse = {
-			fulfillmentText: "",
+			followupEventInput: {
+				name: "",
+			},
 		};
 
 		if (displayName === "Ajuda") {
 			if (servico === "Landing page") {
-				dialogflowResponse.fulfillmentText =
-					"Legal, vamos conversa mais sobre esse projeto de Site?";
+				dialogflowResponse.followupEventInput.name = "site";
 			}
 
 			if (servico === "Sistema") {
-				dialogflowResponse.fulfillmentText =
-					"Legal, vamos conversa mais sobre esse projeto de Sistema?";
+				dialogflowResponse.followupEventInput.name = "sistemas";
 			}
 
 			if (servico === "Aplicativos") {
-				dialogflowResponse.fulfillmentText =
-					"Legal, vamos conversa mais sobre esse projeto de Aplicativo?";
+				dialogflowResponse.followupEventInput.name = "aplicativo";
 			}
 		}
 

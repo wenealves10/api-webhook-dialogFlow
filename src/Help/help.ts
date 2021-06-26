@@ -17,17 +17,17 @@ class Help {
 		if (displayName === "Ajuda") {
 			if (servico === "Landing page") {
 				dialogflowResponse.fulfillmentText =
-					"Legal, vamos conversa mais sobre esse projeto?";
+					"Legal, vamos conversa mais sobre esse projeto de Site?";
 			}
 
 			if (servico === "Sistema") {
 				dialogflowResponse.fulfillmentText =
-					"Legal, vamos conversa mais sobre esse projeto?";
+					"Legal, vamos conversa mais sobre esse projeto de Sistema?";
 			}
 
 			if (servico === "Aplicativos") {
 				dialogflowResponse.fulfillmentText =
-					"Legal, vamos conversa mais sobre esse projeto?";
+					"Legal, vamos conversa mais sobre esse projeto de Aplicativo?";
 			}
 		}
 

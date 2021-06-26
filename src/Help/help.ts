@@ -13,20 +13,27 @@ class Help {
 		const dialogflowResponse = {
 			followupEventInput: {
 				name: "",
+				parameters: {
+					servico: "",
+				},
 			},
 		};
 
 		if (displayName === "Ajuda") {
 			if (servico === "Landing page") {
-				dialogflowResponse.followupEventInput.name = "site";
+				dialogflowResponse.followupEventInput.name = "product";
+				dialogflowResponse.followupEventInput.parameters.servico =
+					"Landing Page";
 			}
 
 			if (servico === "Sistema") {
-				dialogflowResponse.followupEventInput.name = "sistemas";
+				dialogflowResponse.followupEventInput.name = "product";
+				dialogflowResponse.followupEventInput.parameters.servico = "Sistema";
 			}
 
 			if (servico === "Aplicativos") {
-				dialogflowResponse.followupEventInput.name = "aplicativo";
+				dialogflowResponse.followupEventInput.name = "product";
+				dialogflowResponse.followupEventInput.parameters.servico = "Aplicativo";
 			}
 		}
 

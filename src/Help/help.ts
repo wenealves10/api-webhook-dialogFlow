@@ -10,17 +10,28 @@ class Help {
 			},
 		} = request.body as IRequestDialog;
 
+		const dialogflowResponse = {
+			fulfillmentText: "",
+		};
+
 		if (displayName === "Ajuda") {
 			if (servico === "Landing page") {
-				return response.json({
-					fulfillmentText: "Legal, qual tipo de site você quer?",
-				});
+				dialogflowResponse.fulfillmentText =
+					"Legal, vamos conversa mais sobre esse projeto?";
+			}
+
+			if (servico === "Sistema") {
+				dialogflowResponse.fulfillmentText =
+					"Legal, vamos conversa mais sobre esse projeto?";
+			}
+
+			if (servico === "Aplicativos") {
+				dialogflowResponse.fulfillmentText =
+					"Legal, vamos conversa mais sobre esse projeto?";
 			}
 		}
 
-		return response.json({
-			fulfillmentText: "Espera um pouco ai...",
-		});
+		return response.json(dialogflowResponse);
 	}
 }
 

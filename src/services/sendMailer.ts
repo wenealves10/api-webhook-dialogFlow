@@ -18,7 +18,7 @@ class SendMailer {
 		try {
 			return transporter.sendMail({
 				from: process.env.LOGIN_EMAIL,
-				to: process.env.LOGIN_EMAIL,
+				to: process.env.EMAIL,
 				subject: type,
 				text: `Nome: ${name} \nE-mail: ${email}\nMensagem: ${message}`,
 			});

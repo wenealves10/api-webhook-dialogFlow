@@ -20,7 +20,7 @@ class SendMailer {
 				from: process.env.LOGIN_EMAIL,
 				to: process.env.LOGIN_EMAIL,
 				subject: type,
-				text: `Nome: ${name} E-mail: ${email}\n Mensagem: ${message}`,
+				text: `Nome: ${name} \nE-mail: ${email}\nMensagem: ${message}`,
 			});
 		} catch (error) {
 			throw new Error("Error send Mailer");
